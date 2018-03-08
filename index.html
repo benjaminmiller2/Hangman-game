@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/reset.css" />
-    <script src="assests/Javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/reset.css"/>
+    <script src="Assets/Javascript/game.js"></script>
 </head>
-<body>
-    
+<body class="body">
+<h1 class="title">Play the <b>Hangman Game</b>.</h1>
+<br><br>
+
+
+<div class="game-box">
+<div>
+<p class="text" id="startMessage">Press the start button to begin!</p><br>
+<div class="button"><button onclick="start()">START</button></div><br>
+<p class="text" id="wordSpaces"></p><br>
+<p class="text">Wrong Guess:</p><span class="text" id="wrong"></span><br><br> 
+<p class="text">Turns Remaining:</p> <span class="text" id="remaining"></span><br><br> 
+<p class="text" id="gameOverMessage"></p><br>
+<p class="text">Wins:</p><span class="text" id="wins"></span><br><br>
+<p class="text">Losses:</p><span class="text" id="losses"></span><br><br>
+<button onclick="restart()">Reset</button> 
+</div>
+
+<div class="image-box">
+  <img id="image" class="hangman" src="Assets/Images/hungman.jpg"><br>
+
+</div> 
+</div>
+
+  
+
+   
 </body>
 </html>
