@@ -1,0 +1,102 @@
+.button{
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25%;
+    margin: 1em;
+    color: white;
+    background-color: #530006;
+    font-size: 15px;
+}
+
+.button:hover{
+    color: #530006;
+    background-color: white;
+}
+
+.alpha-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid white;
+    padding: 1em;
+    background-color: #CF6870;
+}
+
+.display-box{
+    border: 1px solid white;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 2em;
+    background-color: #CF6870;
+}
+
+.words{
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.turn-box{
+    border: 1px solid #530006;
+    width: 100%;
+    background-color: #530006;
+    text-align: center;
+
+}
+
+.guessed-box{
+    border: 1px solid #530006;
+    width: 100%;
+    background-color: #530006;
+    text-align: center;
+
+}
+
+.info-box{
+    border: 1px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    background-color: #CF6870;
+    padding: 1em;
+}
+
+.button-box{
+   
+
+}
+
+.reset-button{
+    border: 1px solid black;
+    width: 10em;
+    height: 20%;
+    border-radius: 30%;
+    margin-top: 50%;
+    background-color: #530006;
+    color:white;
+}
+
+.reset-button:hover{
+    background-color: white;
+    color:#530006;
+}
+
+.title{
+    text-align: center;
+}
+
+body{
+    background-color: #A6373F;
+    color: white;
+    font-family: 'PT Serif', serif;
+}

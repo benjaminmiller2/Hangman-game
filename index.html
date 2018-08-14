@@ -5,36 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/reset.css"/>
-    <script src="Assets/Javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <script src="assets/script.js"></script>
 </head>
-<body class="body">
-<h1 class="title">Play the <b>Hangman Game</b>.</h1>
-<br><br>
+<body>
+    <div class="container">
+    
+        <h1 class="title">Hangman</h1>
+        <h3 class="title">-A vanilla Javascript Game-</h3>
+    
+        <div class="display-box">
+            <h1 id="word-display" class="words"></h1>
+        </div>
+    
+        <h2 class ="title" id="results">Choose a letter!</h2>  
+    
+        <div id="alpha" class="alpha-box"></div>
+    
+    
+    
+    <div class="info-box">
+        <div>
+            <h2>Turns Remaining</h2>
+            <div class="turn-box"><h1 id="turns-display"></h1></div>
+        </div>
+        <div class="button-box" >
+            <button id="btn" class="reset-button">Start Again</button>
+        </div>
+        <div>
+            <h2>Letters Guessed</h2>
+            <div class="guessed-box"><h1 id="guessed">None Yet</h1></div>
+        </div>
+        
+    </div>
+    
+    
 
-
-<div class="game-box">
-<div>
-<p class="text" id="startMessage">Press the start button to begin!</p><br>
-<div class="button"><button onclick="start()">START</button></div><br>
-<p class="text" id="wordSpaces"></p><br>
-<p class="text">Wrong Guess:</p><span class="text" id="wrong"></span><br><br> 
-<p class="text">Turns Remaining:</p> <span class="text" id="remaining"></span><br><br> 
-<p class="text" id="gameOverMessage"></p><br>
-<p class="text">Wins:</p><span class="text" id="wins"></span><br><br>
-<p class="text">Losses:</p><span class="text" id="losses"></span><br><br>
-<button onclick="restart()">Reset</button> 
-</div>
-
-<div class="image-box">
-  <img id="image" class="hangman" src="Assets/Images/hungman.jpg"><br>
-
-</div> 
-</div>
-
-  
-
-   
+    </div>
 </body>
+
+
 </html>
